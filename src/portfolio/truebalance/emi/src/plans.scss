@@ -1,0 +1,155 @@
+@import "../common.scss";
+
+body {
+  // background-color: rgb(238, 238, 238);
+}
+
+.container-plan {
+  margin-bottom: 0;
+  // padding: get-vw(13.3px) 0;
+}
+.plan {
+  margin: get-vw(11.3px) get-vw(7.1px);
+  background-color: #ffffff;
+	box-shadow: 0 get-vw(2px) get-vw(2px) 0 rgba(0, 0, 0, 0.17), 0 0 get-vw(2px) 0 rgba(0, 0, 0, 0.11);
+
+  h4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .mccmnc {
+    padding: get-vw(8.9px) 0 get-vw(7.9px) $pad-1;
+	  border-bottom: solid get-vw(0.9px) rgba(150, 150, 150, 0.2);
+    font-size: get-vw(12.4px);
+    font-weight: 500;
+  	line-height: 1.71;
+  	color: #a1a5ad;
+  }
+  .main {
+    padding: $pad-1 0 get-vw(18px) $pad-1;
+    color: #1d2129;
+
+    dl {
+      margin-bottom: get-vw(8.2px);
+    }
+    dt {
+      width: get-vw(82.7px);
+      margin: get-vw(9.8px) 0;
+      font-size: get-vw(31.1px);
+    	font-weight: bold;
+    	line-height: 0.71;
+
+      .unit {
+        font-size: get-vw(27.6px);
+	      line-height: 0.81;
+      }
+    }
+    .title {
+      font-size: $pad-1;
+      font-weight: 500;
+      line-height: 1.56;
+    }
+    .duration {
+      margin-top: get-vw(-1px);
+      font-size: $pad-1;
+      font-weight: 500;
+      line-height: 1.44;
+	    color: #737884;
+    }
+    p {
+      margin-right: get-vw(26.7px);
+      margin-bottom: 0;
+      font-size: $pad-1;
+    	line-height: 1.5;
+    	color: #a1a5ad;
+    }
+  }
+  .amounts {
+    margin: 0;
+    padding: get-vw(14.4px) 0 get-vw(13.9px);
+    border-bottom: solid get-vw(0.9px) #e0e0e0;
+    background-color: #fafafa;
+
+    .col-xs-3 {
+      padding: get-vw(1px) 0 0 get-vw(10.5px);
+      border-left: solid get-vw(0.9px) #d9dde5;
+      font-size: get-vw(16px);
+    	line-height: 1.39;
+    	color: #1d2129;
+    }
+    label {
+      display: block;
+      margin-bottom: get-vw(3px);
+      font-size: get-vw(10px);
+    	font-weight: 500;
+    	line-height: 1.0;
+    	color: #a1a5ad;
+    }
+    .total-amount {
+      width: 43%;
+      padding: get-vw(1px) 0 0 $pad-1;
+      font-size: get-vw(17.8px);
+    	font-weight: bold;
+    	line-height: 1.25;
+    	color: #ed6745;
+    }
+    .price {
+      width: 27%;
+    }
+    .fee {
+      width: 30%;
+    }
+  }
+  .container-btn {
+    padding: get-vw(13.4px) $pad-1 get-vw(13px);
+  }
+  .btn-tb {
+    // padding: get-vw(12px) 0 get-vw(11.2px);
+    padding: 0;
+    border: 0;
+    border-radius: get-vw(1.8px);
+  	background-color: #ed6745;
+  	box-shadow: 0 get-vw(2px) get-vw(2px) 0 rgba(0, 0, 0, 0.24), 0 0 get-vw(2px) 0 rgba(0, 0, 0, 0.12);
+    font-size: get-vw(21.3px);
+  	font-weight: 500;
+  	line-height: get-vw(22.2px); // 1.04
+  	color: #ffffff;
+
+    small {
+      display: inline-block;
+      margin: get-vw(12px) get-vw(8.9px) get-vw(11.2px);
+      font-size: get-vw(17.8px);
+    	font-weight: 400;
+    	// line-height: get-vw(22.2px);
+      vertical-align: top;
+    }
+    label {
+      margin: get-vw(12px) 0 get-vw(11.2px);
+    }
+    &:active {
+      background-color: #d45839;
+    }
+  }
+}
+
+.no-plan {
+  height: 100vw;
+  padding-top: 56vw;
+
+  div {
+    margin-top: get-vw(115px / 2) * -1;
+
+    img {
+      width: get-vw(82px);
+      height: get-vw(82px);
+    }
+    h2 {
+      margin-top: get-vw(15px);
+      font-size: get-vw(18.7px);
+      line-height: 0.95;
+      color: #a1a5ad;
+      font-weight: normal;
+    }
+  }
+}

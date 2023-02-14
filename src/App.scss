@@ -1,0 +1,68 @@
+// @import "custom_bootstrap";
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+body {
+  background-color: #e0f2f1;
+}
+
+.full-height #root,
+.full-height .home {
+  height: 100%;
+}
+
+.intro {
+  min-height: auto;
+}
+.view .full-bg-img {
+  top: 32px;
+}
+.home {
+  background: url("./assets/PA105114.JPG") no-repeat center center;
+  background-size: cover;
+  text-shadow: 1px 1px 2px #000, 0 0 5px #333;
+}
+
+.navbar {
+  background-color: transparent;
+}
+
+.top-nav-collapse,
+.top-nav-opacity {
+  background-color: #009688;
+}
+
+@include media-breakpoint-down(sm) {
+  .navbar {
+    background-color: #009688;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .navbar-expand-lg .navbar-toggler {
+    display: none;
+  }
+}
+
+.main-container {
+  padding: 100px 0;
+
+  .truebalance {
+    margin: -40px 0 -100px;
+    padding: 0;
+  }
+}
+
+article {
+  hr {
+    margin-bottom: 2rem;
+  }
+  blockquote {
+    border-left-color: #80cbc4;
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+#container_wrap {
+  height: 100%; }
+
+.dropdown-on-toolbar svg {
+  fill: #969696 !important; }
+
+.panel-footer {
+  text-align: right; }
+
+.snackbar span {
+  color: #fff; }
+
+.handsontable .current-row, .handsontable .htDimmed.current-row {
+  background-color: #dff0d8; }
+
+.handsontable .htDimmed {
+  background-color: #FFF8E1; }
+
+.handsontable .changed {
+  background-color: #000;
+  color: #fff; }
+
+.score-radio > div > div {
+  margin-right: 8px !important; }
+
+.score-radio label {
+  width: auto !important; }
+
+.sitter-search-order-listitem > div > div > div:first-child {
+  font-size: 16px; }

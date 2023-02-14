@@ -1,0 +1,100 @@
+#luckygame, #luckygame-list {
+  padding-bottom: 50px;
+
+  .container-table {
+    position: relative;
+
+    .ht_master .wtHolder {
+      height: auto !important;
+    }
+    .ht_clone_top {
+      z-index: -1;
+    }
+
+    .status {
+      position: absolute;
+      top: -25px;
+      right: 0;
+
+      .text-warning strong {
+        font-weight: normal;
+      }
+    }
+  }
+
+  .monospace {
+    font-family: monospace;
+  }
+
+  .gantt {
+    .handle-group {
+      display: none;
+    }
+  }
+
+  .period {
+    .col-sm-1 {
+      padding-right: 0;
+      padding-left: 0;
+      width: 20px;
+    }
+
+    .form-control.flatpickr-input[readonly] {
+      background-color: white;
+    }
+
+    @media (max-width: 767px) {
+      :nth-child(3) .has-feedback label ~ .form-control-feedback {
+        top: 0;
+      }
+    }
+  }
+
+  .table-condition {
+    > :nth-child(1), > .visible-sm-block {
+      line-height: 34px;
+    }
+    .form-group {
+      margin-bottom: 0;
+    }
+    label {
+      display: block;
+      text-align: center;
+      font-weight: normal;
+    }
+    .form-control-feedback {
+      width: auto;
+      right: 25px;
+      position: absolute;
+      top: 0;
+      z-index: 2;
+      display: block;
+      height: 38px;
+      line-height: 38px;
+      text-align: center;
+      pointer-events: none;
+    }
+
+    .form-control {
+      &.bg-success {
+        background-color: #dff0d8;
+      }
+      &.bg-danger {
+        background-color: #f2dede;
+      }
+    }
+  }
+
+  .row.padding {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .modal-body {
+    .btn-link {
+      margin: 0;
+      padding: 0.5rem 2rem;
+      color: red !important;
+    }
+  }
+}

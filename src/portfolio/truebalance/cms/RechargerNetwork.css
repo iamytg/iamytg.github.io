@@ -1,0 +1,34 @@
+#instructions {
+  margin-bottom: 2rem; }
+  #instructions .import-images .card, #instructions .import-images .list-group {
+    margin-bottom: 1rem; }
+    #instructions .import-images .card .btn-sm, #instructions .import-images .list-group .btn-sm {
+      padding: 0.5rem 1rem; }
+  #instructions .import-images .card-body {
+    margin-bottom: 0;
+    padding-left: 30px; }
+  #instructions .import-images .media-body {
+    display: table-cell; }
+  #instructions .preview ul {
+    margin-top: 10px; }
+  #instructions dl {
+    padding: 1px 10px; }
+  #instructions dt {
+    line-height: 34px; }
+  #instructions dt, #instructions dd {
+    margin-top: 15px; }
+  #instructions .btn-info {
+    margin-bottom: 20px; }
+  #instructions .card-title {
+    margin-bottom: 0; }
+  #instructions .button-set li {
+    margin-top: 1rem; }
+
+.ReactModal__Overlay {
+  z-index: 102; }
+  .ReactModal__Overlay .modal-dialog {
+    outline: none; }
+  @media (min-width: 768px) {
+    .ReactModal__Overlay .modal-dialog {
+      width: 600px;
+      margin: 70px auto; } }

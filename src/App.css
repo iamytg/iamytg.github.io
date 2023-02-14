@@ -1,0 +1,47 @@
+body {
+  background-color: #e0f2f1; }
+
+.full-height #root,
+.full-height .home {
+  height: 100%; }
+
+.intro {
+  min-height: auto; }
+
+.view .full-bg-img {
+  top: 32px; }
+
+.home {
+  background: url("./assets/PA105114.JPG") no-repeat center center;
+  background-size: cover;
+  text-shadow: 1px 1px 2px #000, 0 0 5px #333; }
+
+.navbar {
+  background-color: transparent; }
+
+.top-nav-collapse,
+.top-nav-opacity {
+  background-color: #009688; }
+
+@media (max-width: 767.98px) {
+  .navbar {
+    background-color: #009688; } }
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-toggler {
+    display: none; } }
+
+.main-container {
+  padding: 100px 0; }
+  .main-container .truebalance {
+    margin: -40px 0 -100px;
+    padding: 0; }
+
+article hr {
+  margin-bottom: 2rem; }
+
+article blockquote {
+  border-left-color: #80cbc4; }
+  article blockquote p {
+    margin: 0;
+    padding: 0; }

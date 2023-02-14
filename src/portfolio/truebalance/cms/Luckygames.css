@@ -1,0 +1,57 @@
+#luckygame, #luckygame-list {
+  padding-bottom: 50px; }
+  #luckygame .container-table, #luckygame-list .container-table {
+    position: relative; }
+    #luckygame .container-table .ht_master .wtHolder, #luckygame-list .container-table .ht_master .wtHolder {
+      height: auto !important; }
+    #luckygame .container-table .ht_clone_top, #luckygame-list .container-table .ht_clone_top {
+      z-index: -1; }
+    #luckygame .container-table .status, #luckygame-list .container-table .status {
+      position: absolute;
+      top: -25px;
+      right: 0; }
+      #luckygame .container-table .status .text-warning strong, #luckygame-list .container-table .status .text-warning strong {
+        font-weight: normal; }
+  #luckygame .monospace, #luckygame-list .monospace {
+    font-family: monospace; }
+  #luckygame .gantt .handle-group, #luckygame-list .gantt .handle-group {
+    display: none; }
+  #luckygame .period .col-sm-1, #luckygame-list .period .col-sm-1 {
+    padding-right: 0;
+    padding-left: 0;
+    width: 20px; }
+  #luckygame .period .form-control.flatpickr-input[readonly], #luckygame-list .period .form-control.flatpickr-input[readonly] {
+    background-color: white; }
+  @media (max-width: 767px) {
+    #luckygame .period :nth-child(3) .has-feedback label ~ .form-control-feedback, #luckygame-list .period :nth-child(3) .has-feedback label ~ .form-control-feedback {
+      top: 0; } }
+  #luckygame .table-condition > :nth-child(1), #luckygame .table-condition > .visible-sm-block, #luckygame-list .table-condition > :nth-child(1), #luckygame-list .table-condition > .visible-sm-block {
+    line-height: 34px; }
+  #luckygame .table-condition .form-group, #luckygame-list .table-condition .form-group {
+    margin-bottom: 0; }
+  #luckygame .table-condition label, #luckygame-list .table-condition label {
+    display: block;
+    text-align: center;
+    font-weight: normal; }
+  #luckygame .table-condition .form-control-feedback, #luckygame-list .table-condition .form-control-feedback {
+    width: auto;
+    right: 25px;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    display: block;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    pointer-events: none; }
+  #luckygame .table-condition .form-control.bg-success, #luckygame-list .table-condition .form-control.bg-success {
+    background-color: #dff0d8; }
+  #luckygame .table-condition .form-control.bg-danger, #luckygame-list .table-condition .form-control.bg-danger {
+    background-color: #f2dede; }
+  #luckygame .row.padding, #luckygame-list .row.padding {
+    padding-right: 15px;
+    padding-left: 15px; }
+  #luckygame .modal-body .btn-link, #luckygame-list .modal-body .btn-link {
+    margin: 0;
+    padding: 0.5rem 2rem;
+    color: red !important; }

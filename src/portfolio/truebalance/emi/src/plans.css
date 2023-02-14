@@ -1,0 +1,120 @@
+* {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
+  -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
+  -webkit-tap-highlight-color: transparent !important;
+  outline: none !important; }
+
+.container-plan {
+  margin-bottom: 0; }
+
+.plan {
+  margin: 3.53125vw 2.21875vw;
+  background-color: #ffffff;
+  box-shadow: 0 0.625vw 0.625vw 0 rgba(0, 0, 0, 0.17), 0 0 0.625vw 0 rgba(0, 0, 0, 0.11); }
+  .plan h4 {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .plan .mccmnc {
+    padding: 2.78125vw 0 2.46875vw 4.4375vw;
+    border-bottom: solid 0.28125vw rgba(150, 150, 150, 0.2);
+    font-size: 3.875vw;
+    font-weight: 500;
+    line-height: 1.71;
+    color: #a1a5ad; }
+  .plan .main {
+    padding: 4.4375vw 0 5.625vw 4.4375vw;
+    color: #1d2129; }
+    .plan .main dl {
+      margin-bottom: 2.5625vw; }
+    .plan .main dt {
+      width: 25.84375vw;
+      margin: 3.0625vw 0;
+      font-size: 9.71875vw;
+      font-weight: bold;
+      line-height: 0.71; }
+      .plan .main dt .unit {
+        font-size: 8.625vw;
+        line-height: 0.81; }
+    .plan .main .title {
+      font-size: 4.4375vw;
+      font-weight: 500;
+      line-height: 1.56; }
+    .plan .main .duration {
+      margin-top: -0.3125vw;
+      font-size: 4.4375vw;
+      font-weight: 500;
+      line-height: 1.44;
+      color: #737884; }
+    .plan .main p {
+      margin-right: 8.34375vw;
+      margin-bottom: 0;
+      font-size: 4.4375vw;
+      line-height: 1.5;
+      color: #a1a5ad; }
+  .plan .amounts {
+    margin: 0;
+    padding: 4.5vw 0 4.34375vw;
+    border-bottom: solid 0.28125vw #e0e0e0;
+    background-color: #fafafa; }
+    .plan .amounts .col-xs-3 {
+      padding: 0.3125vw 0 0 3.28125vw;
+      border-left: solid 0.28125vw #d9dde5;
+      font-size: 5vw;
+      line-height: 1.39;
+      color: #1d2129; }
+    .plan .amounts label {
+      display: block;
+      margin-bottom: 0.9375vw;
+      font-size: 3.125vw;
+      font-weight: 500;
+      line-height: 1.0;
+      color: #a1a5ad; }
+    .plan .amounts .total-amount {
+      width: 43%;
+      padding: 0.3125vw 0 0 4.4375vw;
+      font-size: 5.5625vw;
+      font-weight: bold;
+      line-height: 1.25;
+      color: #ed6745; }
+    .plan .amounts .price {
+      width: 27%; }
+    .plan .amounts .fee {
+      width: 30%; }
+  .plan .container-btn {
+    padding: 4.1875vw 4.4375vw 4.0625vw; }
+  .plan .btn-tb {
+    padding: 0;
+    border: 0;
+    border-radius: 0.5625vw;
+    background-color: #ed6745;
+    box-shadow: 0 0.625vw 0.625vw 0 rgba(0, 0, 0, 0.24), 0 0 0.625vw 0 rgba(0, 0, 0, 0.12);
+    font-size: 6.65625vw;
+    font-weight: 500;
+    line-height: 6.9375vw;
+    color: #ffffff; }
+    .plan .btn-tb small {
+      display: inline-block;
+      margin: 3.75vw 2.78125vw 3.5vw;
+      font-size: 5.5625vw;
+      font-weight: 400;
+      vertical-align: top; }
+    .plan .btn-tb label {
+      margin: 3.75vw 0 3.5vw; }
+    .plan .btn-tb:active {
+      background-color: #d45839; }
+
+.no-plan {
+  height: 100vw;
+  padding-top: 56vw; }
+  .no-plan div {
+    margin-top: -17.96875vw; }
+    .no-plan div img {
+      width: 25.625vw;
+      height: 25.625vw; }
+    .no-plan div h2 {
+      margin-top: 4.6875vw;
+      font-size: 5.84375vw;
+      line-height: 0.95;
+      color: #a1a5ad;
+      font-weight: normal; }

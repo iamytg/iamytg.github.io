@@ -1,0 +1,294 @@
+@import "../common.scss";
+
+#emi-main {
+  background-color: #fff;
+
+  &.closed-service, &.eligible {
+    .banner-top, header, dl {
+      transform: translate3d(0, 0, 0);
+    }
+    footer {
+      margin-top: 0;
+    }
+  }
+  &.eligible {
+    .banner-top {
+      background-color: #fffde7;
+    }
+  }
+  &.closed-service, &.closed-service.eligible {
+    .banner-top {
+      background-color: #fbe9e7;
+
+      p {
+        color: #d50001;
+      }
+    }
+  }
+  &.closed-service .btn {
+    &.btn-plan {
+  	  background-color: #e0e0e0;
+      color: #bdbdbd;
+      box-shadow: none;
+
+      &:active {
+        background-color: #e0e0e0;
+      }
+    }
+
+    &.btn-history {
+      background-color: #ed6745;
+      color: #fff;
+
+      label {
+        font-weight: 500;
+      }
+    }
+  }
+
+  $transform-topBanner: translate3d(0, $height-topBanner * -1, 0);
+
+  // 구형 버전(5.0 미만) 대응용.. 아래 -webkit-transform 지정된 엘리먼트의 높이가 변하면, 각각의 퍼센트포인트들도 고쳐줘야 합니다.
+  .banner-top {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: $transform-topBanner;
+  }
+  header {
+    -webkit-transform: translate3d(0, -20.5%, 0);
+    transform: $transform-topBanner;
+  }
+  dl {
+    -webkit-transform: translate3d(0, -10.5%, 0);
+    transform: $transform-topBanner;
+  }
+  .banner-top, header, dl {
+    transition: transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
+    -webkit-backface-visibility: hidden;
+  }
+
+  .banner-top {
+    height: $height-topBanner;
+    overflow: hidden;
+    background-color: #fffde7;
+    text-align: left;
+
+    img {
+      width: get-vw(28.4px);
+      height: get-vw(28.4px);
+      margin: get-vw(19.6px) get-vw(19.6px) 0 $pad-1;
+    }
+    .pull-left {
+      margin: get-vw(24px) get-vw(16.2px) get-vw(19.8px) get-vw(18px);
+      font-size: get-vw(36px);
+      line-height: 1.1;
+    }
+    p {
+      margin: get-vw(19.6px) 0 0 0;
+      font-size: $pad-1;
+    	line-height: 1.5;
+    	color: #1d2129;
+    }
+  }
+  header {
+    background-color: #fff;
+
+    > img {
+      width: get-vw(256px);
+	    height: get-vw(114px);
+    }
+    h3 {
+      margin: get-vw(13px) 0 get-vw(6px);
+      font-size: get-vw(17.8px);
+    	font-weight: 500;
+    	line-height: 1.4;
+    	color: #1d2129;
+    }
+    p {
+      margin-bottom: get-vw(25px);
+      font-size: $pad-1;
+    	line-height: 1.5;
+    	color: #4e5665;
+    }
+    .container-btn {
+      padding: 0 get-vw(21px) get-vw(18px);
+    }
+    .btn {
+      margin-top: get-vw(13px);
+      padding: get-vw(7px) get-vw(6.2px) get-vw(7.2px) get-vw(8.2px);
+      font-weight: 500;
+      border-radius: get-vw(2.7px);
+      box-shadow: 0 get-vw(2px) get-vw(2px) 0 rgba(0, 0, 0, 0.24), 0 0 get-vw(2px) 0 rgba(0, 0, 0, 0.12);
+
+      $btn-default-line-height: get-vw(28.8px);
+      line-height: $btn-default-line-height;
+
+      &.btn-plan {
+        background-color: #ed6745;
+        font-size: get-vw(16px);
+      	color: #fff;
+
+        label {
+          $btn-padding-top: get-vw(3px);
+          padding-top: $btn-padding-top;
+          line-height: $btn-default-line-height - $btn-padding-top;
+          font-weight: 500;
+        }
+        &:active {
+          background-color: #d45839;
+        }
+      }
+      &.btn-history {
+        background-color: #fafafa;
+      	font-size: $pad-1;
+      	color: #1d2129 !important;
+      }
+      &.btn-below {
+        margin-top: get-vw(19px);
+        padding: 0;
+        box-shadow: none;
+        line-height: 1;
+
+        img {
+          width: get-vw(27px);
+          height: get-vw(14px);
+        }
+      }
+      img {
+        width: get-vw(24px);
+  	    height: get-vw(24px);
+
+        &.pull-left {
+          margin-top: get-vw(2.4px);
+        }
+        &.pull-right {
+          width: get-vw(28.8px);
+    	    height: get-vw(28.8px);
+        }
+      }
+      label {
+        margin: 0;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  dl {
+    margin: 0;
+    padding-top: 1px;
+    background-color: #ed6745;
+
+    dt {
+      margin: get-vw(70px) 0 get-vw(16px);
+      font-size: get-vw(17.8px);
+    	font-weight: 500;
+    	line-height: 1.4;
+    	color: #fff;
+
+      strong {
+        color: #ffcd2e;
+        font-weight: 600;
+      }
+      &:nth-child(1) {
+        margin-top: get-vw(40px);
+      }
+      &:nth-child(5) {
+        margin-bottom: 0;
+      }
+    }
+    dd:nth-child(6) {
+      margin-bottom: get-vw(-1px);
+    }
+    img {
+      width: get-vw(320px);
+      // height: get-vw(142px);
+    }
+  }
+
+  footer {
+    margin-top: $height-topBanner * -1;
+    padding: get-vw(21px) get-vw(16px);
+    background-color: #4e5665;
+
+    h5 {
+      margin: 0 0 get-vw(14px);
+      font-size: get-vw(12.4px);
+    	font-weight: 300;
+    	line-height: 1.43;
+    	color: #fff;
+      strong {
+        font-weight: 500;
+      }
+    }
+    p {
+      margin-bottom: get-vw(23.8px);
+    	font-size: get-vw(12.7px);
+    	line-height: 1.58;
+    	color: rgba(255, 255, 255, 0.6);
+      font-weight: 300;
+    }
+  }
+}
+
+
+#emi-tandc {
+  background-color: #fff;
+
+  button {
+    border: none;
+    background-color: transparent;
+  }
+
+  header {
+    margin-bottom: get-vw(11.9px);
+
+    button {
+      padding: get-vw(11.7px) get-vw(11px);
+
+      img {
+        width: get-vw(24px);
+        height: get-vw(24px);
+      }
+    }
+  }
+
+  dt {
+    margin-bottom: get-vw(16.6px);
+    padding: 0 $pad-1;
+    font-size: get-vw(20px);
+  	font-weight: 500;
+  	line-height: 1.4;
+  }
+  dd {
+    margin-bottom: 0;
+    padding: 0 $pad-1 get-vw(5px);
+    font-size: $pad-1;
+    line-height: 1.62;
+  }
+
+  footer {
+    button {
+      width: 100%;
+      padding: 0 $pad-1 0 get-vw(21.3px) + $pad-1;
+      bottom: 0;
+      left: 0;
+      border-radius: 0;
+      background-color: #ed6745;
+      line-height: get-vw(49.8px);
+      font-size: get-vw(16.2px);
+      color: #fff;
+
+      label {
+        margin: 0;
+  	    font-weight: 500;
+      }
+      img {
+        width: get-vw(21.3px);
+        height: get-vw(21.3px);
+        margin-top: get-vw(15.1px);
+      }
+      &:active {
+        background-color: #d45839;
+      }
+    }
+  }
+}

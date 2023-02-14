@@ -1,0 +1,26 @@
+#gem-logs .table tbody td {
+  text-align: right; }
+
+#gem-logs .container-table {
+  position: relative; }
+  #gem-logs .container-table .status {
+    position: absolute;
+    top: -25px;
+    right: 0; }
+    #gem-logs .container-table .status .text-warning strong {
+      font-weight: normal; }
+
+#gem-logs .monospace {
+  font-family: monospace; }
+
+.ReactModal__Overlay {
+  z-index: 102; }
+  .ReactModal__Overlay .modal-dialog {
+    outline: none; }
+  @media (min-width: 768px) {
+    .ReactModal__Overlay .modal-dialog {
+      width: 600px;
+      margin: 70px auto; } }
+
+.list-group-item.helper {
+  z-index: 103; }

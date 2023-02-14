@@ -1,0 +1,149 @@
+* {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
+  -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
+  -webkit-tap-highlight-color: transparent !important;
+  outline: none !important; }
+
+.history > ul {
+  margin-bottom: 0; }
+  .history > ul > li {
+    padding-bottom: 6.65625vw; }
+
+.history .sticky {
+  z-index: 9999; }
+
+.history .header {
+  margin: 0;
+  background-color: #fff;
+  padding: 5.5625vw 0 5.5vw 4.4375vw;
+  border-bottom: solid 0.28125vw #e0e0e0; }
+  .history .header img {
+    width: 8.875vw;
+    height: 8.875vw; }
+  .history .header dt {
+    margin-bottom: 0.6875vw;
+    font-size: 5vw;
+    font-weight: 500;
+    line-height: 1.33;
+    color: #272c36; }
+  .history .header dd {
+    font-size: 4.4375vw;
+    line-height: 1.25;
+    color: #90949c; }
+    .history .header dd.pull-left {
+      margin: 1.375vw 6.65625vw 0 0; }
+
+.history .plan {
+  margin: 2.25vw 2.21875vw;
+  box-shadow: 0 0.625vw 0.625vw 0 rgba(0, 0, 0, 0.17); }
+  .history .plan .amounts .total-amount {
+    font-size: 6.25vw;
+    line-height: 1.11;
+    color: #1d2129; }
+  .history .plan .amounts .col-xs-3 {
+    font-size: 5.625vw;
+    line-height: 1.23; }
+  .history .plan .amounts label {
+    margin-bottom: 2vw; }
+
+.history .payments {
+  padding: 2.21875vw 0 3.90625vw; }
+  .history .payments li {
+    margin: 0;
+    padding: 3.15625vw 0 2.96875vw;
+    position: relative; }
+    .history .payments li .amount {
+      width: 22%;
+      font-size: 5.5625vw;
+      font-weight: 500;
+      line-height: 11.65625vw;
+      color: #1d2129; }
+    .history .payments li .date {
+      width: 32%;
+      font-size: 4.4375vw;
+      line-height: 11.65625vw;
+      color: #737884; }
+    .history .payments li .container-btn {
+      width: 21.9375vw;
+      padding: 0; }
+      .history .payments li .container-btn .btn {
+        height: 11.65625vw;
+        padding: 0.625vw 0 0;
+        font-size: 5vw;
+        font-weight: 500;
+        border-radius: 0.5625vw;
+        background-color: #ed6745;
+        border: none; }
+      .history .payments li .container-btn .btn.disabled, .history .payments li .container-btn .btn[disabled] {
+        opacity: 1; }
+    .history .payments li.paid .amount, .history .payments li.paid .date {
+      color: #c4c8d0; }
+    .history .payments li.paid .btn {
+      color: #bdbdbd;
+      background-color: #eeeeee;
+      box-shadow: none; }
+    .history .payments li.payable .btn, .history .payments li.will-pay .btn {
+      box-shadow: 0 0.625vw 0.625vw 0 rgba(0, 0, 0, 0.24), 0 0 0.625vw 0 rgba(0, 0, 0, 0.12);
+      color: #fff; }
+      .history .payments li.payable .btn:active, .history .payments li.will-pay .btn:active {
+        background-color: #d45839; }
+    .history .payments li.will-pay-backup .btn {
+      border: solid 0.28125vw #bdbdbd;
+      color: #90949c;
+      background-color: transparent; }
+    .history .payments li.overdue {
+      background-color: rgba(237, 103, 69, 0.1);
+      box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0.5); }
+      .history .payments li.overdue .date {
+        font-size: 4.4375vw;
+        line-height: 1.45;
+        color: #d50001; }
+        .history .payments li.overdue .date:after {
+          display: block;
+          content: 'OVERDUE';
+          font-size: 3.875vw;
+          font-weight: 500;
+          color: #d50001; }
+
+.history .check-circle {
+  width: 8.875vw;
+  height: 8.875vw;
+  margin: 1.40625vw 4.5vw 0 4.375vw; }
+  .history .check-circle input[type=checkbox] {
+    visibility: hidden; }
+
+.history label[for] {
+  width: 68.75vw;
+  padding: 4.5625vw 0 1.5625vw 4.5vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer; }
+  .history label[for] img {
+    width: 8.875vw;
+    height: 8.875vw; }
+
+.history .empty-state {
+  height: 100vw;
+  padding-top: 56vw; }
+  .history .empty-state div img {
+    width: 25.625vw;
+    height: 25.625vw; }
+  .history .empty-state div h2 {
+    margin-top: 4.6875vw;
+    font-size: 5.84375vw;
+    line-height: 0.95;
+    color: #a1a5ad;
+    font-weight: normal; }
+
+.history .console {
+  position: fixed;
+  opacity: .8;
+  width: 100vw;
+  height: 20vw;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 2.5vw;
+  overflow: scroll; }
+  .history .console li {
+    padding-bottom: 0; }
